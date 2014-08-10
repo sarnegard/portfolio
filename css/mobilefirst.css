@@ -1,0 +1,346 @@
+/*mobile first*/
+
+
+/*style.css*/
+
+.work {
+    display: block:
+}
+
+html, body {
+    height: 100%;
+}
+body{
+    font-family: "Raleway";
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.container {
+    text-align: center;
+}
+section {
+    margin-top: 2.5%;
+    overflow:hidden;
+}
+.clear {
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+/*    text-align: left;*/
+    padding:0;
+}
+a {
+    text-decoration: none;
+}
+
+.right {
+    float: right;
+}
+
+.right-align {
+    text-align: right;
+}
+p {
+    padding: 10px;
+}
+
+.left-align, p, .col h3, li {
+    text-align: left;
+}
+img {
+    max-width: 100%;
+
+}
+/*-----------Header-----------------------------------*/
+
+nav {
+
+}
+nav ul {
+    margin: 0 auto;
+}
+nav li:nth-child(1){
+    margin-left:0;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+nav a {
+    color:#ff5566;
+}
+
+nav a:hover {
+    color:#000;
+}
+
+.main-logo {
+    margin: 0 auto;
+    position: relative;
+    max-width: 50%;
+}
+
+.main-logo a {
+    color: transparent;
+    display: block;
+}
+
+.main-logo a img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.main-logo a:hover {
+/*    border: 1px solid black;*/
+}
+
+.navbar h2 {
+    margin: 0;
+    margin-bottom: 1em;
+    display: block;
+    font-size: 1em;
+    font-weight:400;
+
+}
+
+.center {
+    text-align: center;
+}
+
+/* ------------------Footer--------------------*/
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -150px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+footer, .page-wrap:after {
+    height: 150px;
+}
+
+footer {
+/*    background: #ff5566;*/
+   border-bottom: 10px solid #ff5566;
+/*   position:relative;*/
+/*    height: %;*/
+/*   bottom: -100px;*/
+
+}
+
+footer li {
+    display: inline-block;
+}
+
+
+/*-------------------About---------------------------*/
+
+.about, .contact {
+    text-align: center;
+    overflow: hidden;
+    height: 0;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+}
+
+.show-section {
+    height: 200px;
+}
+
+
+/*-------------Portolio-----------------------------*/
+
+.work {
+    margin-top: 20px;
+    padding-top: 3%;
+
+    background: #F3F3F2;
+
+
+}
+
+.work .container {
+    overflow: hidden;
+}
+
+
+.work li {
+    margin: 40px;
+    font-size: 72px;
+    height: 15%;
+}
+
+
+/*--------------Display--------------*/
+
+
+
+.proj {
+/*     background-image: url("../images/schol-1.png");*/
+    background-size: cover;
+    border: px solid lightgrey;
+     margin-bottom: 20px;
+    padding: 0;
+    background: white;
+}
+.proj img {
+   width: 100%;
+}
+.proj h3 {
+    text-align:center;
+}
+
+/*--------------Project Page--------------*/
+.overview .col {
+    text-align: left;
+    border: 1px solid grey;
+}
+
+.circle-text {
+/*    width:15%;*/
+    display: inline-block;
+    vertical-align: middle;
+/*    margin: 1.5%;*/
+/*    float:left;*/
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #4679BD;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.circle-text div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+/*
+.project_nav li{
+    list-style: none;
+    display:inline-block;
+}
+.project_nav div {
+  width: 2em;
+  height: 10em;
+  text-align: center;
+  border-radius: 50%;
+  background: dodgerblue;
+  margin: 0 3em 0 0;
+  display: inline-block;
+  color: white;
+  position: relative;
+    vertical-align: middle;
+    padding-top:4em;
+
+}
+*/
+
+.project_nav li::before{
+  content: '';
+/*  position: absolute;*/
+  top: 5em;
+  left: -4em;
+  width: 10em;
+  height: .2em;
+  background: dodgerblue;
+  z-index: -1;
+}
+
+
+.project_nav div:first-child::before {
+  display: none;
+}
+
+.active {
+  background: dodgerblue;
+}
+
+.active ~ li {
+  background: lightblue;
+}
+
+.active ~ li::before {
+  background: lightblue;
+}
+
+
+/*Clearfix*/
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/*----------------diagram-----------------*/
+.circle {
+    border-radius: 50%;
+    border: 2px dashed black;
+    height: 10em;
+    width:  10em;
+    float: right;
+    padding: 1em 1em;
+}
+
+/*----------------------------Media Queries*/
+
+@media screen and (min-width: 767px) {
+     nav ul {
+    clear:both;
+    text-align: right;
+    }
+
+
+    .main-logo {
+        margin-left: 2.5%;
+        float:left;
+        margin-bottom: -25px;
+    }
+
+    nav ul li {
+        margin-left: 5%;
+    }
+    .navbar h2 {
+        margin: 0;
+        font-size: 14pt;
+
+}
+
+@media screen and (min-width: 500px) {
+
+    .proj:nth-child(odd){
+        margin-left: 0;
+    }
+    nav {
+        margin: 0;
+    }
+
+/*    create drop down*/
+
+
+
+}
+
+
