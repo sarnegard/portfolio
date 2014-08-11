@@ -15,7 +15,10 @@ body{
     box-sizing: border-box;
     line-height: 1.5;
 }
-
+h2, p {
+    margin: 0;
+    padding: 10px;
+}
 .container {
     text-align: center;
 }
@@ -42,9 +45,6 @@ a {
 
 .right-align {
     text-align: right;
-}
-p {
-    padding: 10px;
 }
 
 .left-align, p, .col h3, li {
@@ -201,7 +201,11 @@ footer li {
 /*--------------Project Page--------------*/
 .overview .col {
     text-align: left;
-    border: 1px solid grey;
+/*    border: 1px solid grey;*/
+}
+
+.overview {
+    background: yellow;
 }
 
 .circle-text {
