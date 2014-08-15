@@ -28,7 +28,9 @@ div {
 
 
 }
-
+.row {
+    clear:both;
+}
 .right {
     float: right;
 }
