@@ -3,6 +3,12 @@
 
 /*style.css*/
 
+h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 24px;
+
+}
+
 .work {
     display: block:
 }
@@ -17,7 +23,7 @@ body{
 }
 h2, p {
     margin: 0;
-/*    padding: 5px;*/
+    padding: 5px;
 }
 .container {
     text-align: center;
@@ -33,10 +39,15 @@ section {
 nav ul {
     list-style: none;
 /*    text-align: left;*/
-    padding:0;
+    padding: 0;
 }
 a {
+    color: #ff5566;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .right {
@@ -56,9 +67,7 @@ img {
 }
 /*-----------Header-----------------------------------*/
 
-nav {
 
-}
 nav ul {
     margin: 0 auto;
 }
@@ -70,23 +79,17 @@ nav ul li {
     margin-left: 10%;
 }
 
-nav a {
-    color:#ff5566;
-}
-
-nav a:hover {
-    color:#000;
-}
 
 .main-logo {
     margin: 0 auto;
     position: relative;
-    max-width: 50%;
+
 }
 
 .main-logo a {
-    color: transparent;
+    color:black;
     display: block;
+    margin-bottom: 0;
 }
 
 .main-logo a img {
@@ -94,8 +97,9 @@ nav a:hover {
     max-width: 250px;
 }
 
-.main-logo a:hover {
-/*    border: 1px solid black;*/
+.main-logo h1 {
+    margin-bottom: 0px;
+    font-size: 36px;
 }
 
 .navbar h2 {
@@ -107,9 +111,10 @@ nav a:hover {
 
 }
 
-.center {
+.contact p, .about p, .center {
     text-align: center;
 }
+
 
 /* ------------------Footer--------------------*/
 .page-wrap {
@@ -136,10 +141,12 @@ footer {
 }
 footer ul {
     padding: 0;
+    font-size: 24px;
 }
 
 footer li {
     display: inline-block;
+    padding: 0 20px;
 }
 
 
@@ -148,18 +155,29 @@ footer li {
 .about, .contact {
     text-align: center;
     overflow: hidden;
+    max-width: 80%;
     height: 0;
     transition: height .5s;
     -webkit-transition: height .5s;
     -moz-transition: height .5s;
+    margin: 0 auto;
+    position: relative;
+}
+.about h1, .contact h1 {
+    margin-bottom: 0;
 }
 
 .show-section {
     height: 200px;
 }
+.close {
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.5em;
+}
 
 
-/*-------------Portolio-----------------------------*/
+/*-------------Portfolio-----------------------------*/
 
 .work {
     margin-top: 20px;
@@ -169,9 +187,13 @@ footer li {
 
 
 }
+.work a {
+    color:black;
+}
 
 .work .container {
     overflow: hidden;
+    padding-bottom: 2%;
 }
 
 
@@ -191,7 +213,7 @@ footer li {
     background-size: cover;
     border: px solid lightgrey;
 
-    padding: 0;
+/*    padding: 0;*/
     background: white;
 
 }
@@ -201,6 +223,7 @@ footer li {
 }
 .proj h3 {
     text-align:center;
+    margin-bottom: 0;
 }
 /*
 #centro div:hover {
@@ -217,9 +240,15 @@ footer li {
 /*    background-color: lightblue;*/
 }
 #centro > div {
-    background-color: lightblue;
+    background-color: #5DB5A4;
 }
-#centro > div:hover {
+#book > div {
+    background-color: #F4CDA5;
+}
+#beta > div {
+    background-color: #F57A82;
+}
+#centro > div:hover, #book > div:hover, #beta > div:hover {
     background-color: white;
 
 }
@@ -391,9 +420,9 @@ blockquote::after {
 /*----------------------------Media Queries*/
 
 @media screen and (min-width: 767px) {
-     nav ul {
-    clear:both;
-    text-align: right;
+    nav ul {
+        clear:both;
+        text-align: right;
     }
 
 
@@ -401,6 +430,13 @@ blockquote::after {
         margin-left: 2.5%;
         float:left;
         margin-bottom: -25px;
+        max-width: 50%;
+    }
+    .main-logo h1 {
+        margin-bottom: 10px;
+    }
+    .project {
+        margin-bottom: 50px;
     }
 
     nav ul li {
