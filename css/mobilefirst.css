@@ -6,12 +6,10 @@
 h1 {
     font-family: Oswald, sans-serif;
     font-size: 24px;
+    text-align: center;
 
 }
 
-.work {
-    display: block:
-}
 
 html, body {
     height: 100%;
@@ -22,15 +20,22 @@ body{
     line-height: 1.5;
 }
 h2, p {
-    margin: 0;
+    margin: 0, auto;
     padding: 5px;
 }
-.container {
-    text-align: center;
+p {
+    max-width: 500px;
 }
+
 section {
-    margin-top: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
     overflow:hidden;
+    border-top: 2px solid #d3d3d2;
+}
+section:last-child {
+    border-bottom: 2px solid #d3d3d2;
 }
 .clear {
     clear: both;
@@ -67,6 +72,10 @@ img {
 }
 /*-----------Header-----------------------------------*/
 
+header,
+footer {
+    text-align: center;
+}
 
 nav ul {
     margin: 0 auto;
@@ -74,7 +83,7 @@ nav ul {
 nav li:nth-child(1){
     margin-left:0;
 }
-nav ul li {
+nav li {
     display: inline-block;
     margin-left: 10%;
 }
@@ -111,9 +120,6 @@ nav ul li {
 
 }
 
-.contact p, .about p, .center {
-    text-align: center;
-}
 
 
 /* ------------------Footer--------------------*/
@@ -132,11 +138,7 @@ footer, .page-wrap:after {
 }
 
 footer {
-/*    background: #ff5566;*/
    border-bottom: 10px solid #ff5566;
-/*   position:relative;*/
-/*    height: %;*/
-/*   bottom: -100px;*/
 
 }
 footer ul {
@@ -155,7 +157,7 @@ footer li {
 .about, .contact {
     text-align: center;
     overflow: hidden;
-    max-width: 80%;
+    max-width: 500px;
     height: 0;
     transition: height .5s;
     -webkit-transition: height .5s;
@@ -170,30 +172,31 @@ footer li {
 .show-section {
     height: 200px;
 }
+
+.contact p, .about p, .center {
+    text-align: center;
+}
+
 .close {
     position: absolute;
     bottom: 0px;
-    font-size: 1.5em;
 }
+
 
 
 /*-------------Portfolio-----------------------------*/
 
 .work {
     margin-top: 20px;
-    padding-top: 3%;
-
+    overflow: hidden;
     background: #F3F3F2;
+    padding-bottom: 3%;
 
 
 }
 .work a {
     color:black;
-}
-
-.work .container {
-    overflow: hidden;
-    padding-bottom: 2%;
+    margin-top: 3%;
 }
 
 
@@ -210,8 +213,10 @@ footer li {
 
 .proj {
 /*     background-image: url("../images/schol-1.png");*/
+/*
     background-size: cover;
     border: px solid lightgrey;
+*/
 
 /*    padding: 0;*/
     background: white;
@@ -221,9 +226,10 @@ footer li {
 .proj img {
    width: 100%;
 }
-.proj h3 {
-    text-align:center;
+.proj h3, .proj p {
+    text-align: center;
     margin-bottom: 0;
+
 }
 /*
 #centro div:hover {
@@ -252,30 +258,11 @@ footer li {
     background-color: white;
 
 }
-/*
-#centro img {
-    background-color: lightblue;
-}
-*/
-
-/*
-#overlay    {  background:rgba(0,0,0,.75);
-               text-align:center;
-               padding:45px 0 66px 0;
-               opacity:0;
-               -webkit-transition: opacity .25s ease;
--moz-transition: opacity .25s ease;}
-
-#centro:hover #overlay {
-               opacity:1;}
-*/
-
 
 
 /*--------------Project Page--------------*/
 .overview {
     text-align: left;
-/*    border: 1px solid grey;*/
 }
 
 .overview div {
@@ -340,58 +327,7 @@ blockquote::after {
    border-left: 20px solid transparent;
    border-right: 20px solid transparent;
 }
-/*
-.project_nav li{
-    list-style: none;
-    display:inline-block;
-}
-.project_nav div {
-  width: 2em;
-  height: 10em;
-  text-align: center;
-  border-radius: 50%;
-  background: dodgerblue;
-  margin: 0 3em 0 0;
-  display: inline-block;
-  color: white;
-  position: relative;
-    vertical-align: middle;
-    padding-top:4em;
 
-}
-*/
-/*
-
-.project_nav li::before{
-  content: '';
-  position: absolute;
-  top: 5em;
-  left: -4em;
-  width: 10em;
-  height: .2em;
-  background: dodgerblue;
-  z-index: -1;
-}
-*/
-
-
-/*
-.project_nav div:first-child::before {
-  display: none;
-}
-
-.active {
-  background: dodgerblue;
-}
-
-.active ~ li {
-  background: lightblue;
-}
-
-.active ~ li::before {
-  background: lightblue;
-}
-*/
 
 
 /*Clearfix*/
@@ -417,6 +353,15 @@ blockquote::after {
     padding: 1em 1em;
 }
 
+/*button styles*/
+
+.button-link {
+    padding: 10px 15px;
+    background: #ff5566;
+    color: #FFF;
+    border-radius: 10px;
+    border-bottom: 2px solid #dd4455;
+}
 /*----------------------------Media Queries*/
 
 @media screen and (min-width: 767px) {
@@ -482,4 +427,8 @@ bottom: 50%;
 
 .flyer {
     margin-top: 100px;
+}
+
+@-ms-viewport{
+  width: device-width;
 }
