@@ -67,6 +67,8 @@ img {
     max-width: 100%;
 
 }
+
+
 /*-----------Header-----------------------------------*/
 
 header,
@@ -347,7 +349,7 @@ blockquote::after {
     height: 10em;
     width:  10em;
     float: right;
-    padding: 1em 1em;
+    padding: 1em;
 }
 
 /*button styles*/
@@ -358,6 +360,11 @@ blockquote::after {
     color: #FFF;
     border-radius: 10px;
     border-bottom: 2px solid #dd4455;
+}
+
+.button-link:hover {
+    background: #dd4455;
+    color: #fff;
 }
 
 /*-------------betabrand carousel quick fix--------------------*/
