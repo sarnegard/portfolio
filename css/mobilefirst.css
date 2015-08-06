@@ -16,11 +16,20 @@ div {
 
 }
 
+ h1,
+        h2 {
+            text-transform: lowercase;
+            font-weight: 700;
+        }
+
+h2 {
+    color: #808080;
+}
 
 h1, .project {
-    font-family: Oswald, sans-serif;
+    font-family: Georgia, serif;
     font-size: 24px;
-    text-align: center;
+    /*text-align: center;*/
 
 }
 
@@ -29,7 +38,7 @@ html, body {
     height: 100%;
 }
 body{
-    font-family: "Raleway";
+    font-family: Lato;
     box-sizing: border-box;
     line-height: 1.5;
     font-size: 1em;
@@ -87,7 +96,6 @@ img {
 
 /*-----------Header-----------------------------------*/
 
-header,
 footer {
     text-align: center;
 }
