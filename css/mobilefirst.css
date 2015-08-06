@@ -3,7 +3,21 @@
 
 /*style.css*/
 
-h1 {
+div {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+
+h1, .project {
     font-family: Oswald, sans-serif;
     font-size: 24px;
     text-align: center;
@@ -18,13 +32,15 @@ body{
     font-family: "Raleway";
     box-sizing: border-box;
     line-height: 1.5;
+    font-size: 1em;
 }
 h2, p {
-    margin: 0, auto;
+/*    margin: 0 auto;*/
     padding: 5px;
 }
 p {
     max-width: 500px;
+    font-size: 0.9em;
 }
 
 section {
@@ -49,7 +65,7 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: black;
+    color: #5DB5A4;
 }
 
 .right {
@@ -107,7 +123,7 @@ nav li {
 
 .main-logo h1 {
     margin-bottom: 0px;
-    font-size: 36px;
+    font-size: 2.2em;
 }
 
 .navbar h2 {
@@ -131,9 +147,11 @@ nav li {
     content: "";
     display: block;
 }
-
+footer {
+    padding: 1.5em 0;
+}
 footer, .page-wrap:after {
-    height: 150px;
+    min-height: 150px;
 }
 
 footer {
@@ -142,12 +160,18 @@ footer {
 }
 footer ul {
     padding: 0;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 footer li {
     display: inline-block;
     padding: 0 20px;
+}
+
+footer .span4 {
+/*    text-align: center;*/
+    float:none;
+    margin: 0 auto;
 }
 
 
@@ -167,7 +191,9 @@ footer li {
 .about h1, .contact h1 {
     margin-bottom: 0;
 }
-
+.about p{
+    margin: 0;
+}
 .show-section {
     height: 200px;
 }
@@ -189,13 +215,13 @@ footer li {
     margin-top: 20px;
     overflow: hidden;
     background: #F3F3F2;
-    padding-bottom: 3%;
+    padding: 3em 0;
 
 
 }
 .work a {
     color:black;
-    margin-top: 3%;
+/*    margin-top: 3%;*/
 }
 
 
@@ -219,8 +245,10 @@ footer li {
 
 /*    padding: 0;*/
     background: white;
+    padding: 0.5em;
 
 }
+
 
 .proj img {
    width: 100%;
@@ -253,8 +281,17 @@ footer li {
 #beta > div {
     background-color: #F57A82;
 }
-#centro > div:hover, #book > div:hover, #beta > div:hover {
-    background-color: white;
+#centro > div:hover{
+    background-color: RGBA(93, 181, 164, 0.5);
+}
+
+#book > div:hover {
+    background-color: RGBA(244, 205, 165, 0.5);
+}
+
+#beta > div:hover {
+/*    background-color: white;*/
+    background-color: RGBA(245, 122, 130, 0.5);
 
 }
 
@@ -354,8 +391,14 @@ blockquote::after {
 
 /*button styles*/
 
+.button-container {
+    float: left;
+
+}
 .button-link {
     padding: 10px 15px;
+    display: block;
+    text-align: center;
     background: #ff5566;
     color: #FFF;
     border-radius: 10px;
@@ -378,6 +421,145 @@ blockquote::after {
 #carousel-beta-generic img {
     width: 100%;
 }
+
+.carousel-caption {
+    color:black;
+    text-shadow: none;
+    background: RGBA(255, 255, 255, 0.7);
+    bottom: 0px;
+}
+
+.deck {
+    border: 3px solid #d3d3d2;
+    margin: 1em 0;
+    border-radius: 10px;
+}
+
+/*-------------------------centro-----------------*/
+.centro img {
+    border: solid 3px #99ddcc;
+    margin-bottom: 5%;
+}
+
+/*blarb wed 9/13 */
+.project-header img {
+/*    width: 50%;*/
+    display: inline-block;
+}
+/*  ----------------------img-------------------*/
+/*constrain for rows with a single image*/
+.constrain {
+    width: 90%;
+    max-width: 900px;
+
+}
+/* Carousel */
+.carousel-control.left, carousel-control.right {
+    background-image:none;
+}
+
+.carousel-control {
+top: 50%;
+bottom: 50%;
+}
+
+.flyer {
+    margin-top: 100px;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+.carousel-inner {
+    margin-bottom: 4em;
+}
+.carousel-indicators li {
+
+    border: 2px solid #ff5566;
+    background: transparent;
+}
+.carousel-indicators li.active {
+    background-color:  #ff5566;
+}
+/*carousel w/ thumbnail    */
+/*
+#myCarousel {
+    max-width: 800px;
+    background-color: #d3d3d2;
+    border: 5px solid #d3d3d2;
+}
+#myCarousel .carousel-inner {
+    margin-bottom: 10em;
+}
+
+#myCarousel .carousel-indicators {
+
+    bottom: -10px;
+    left: 10px;
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+}
+
+#myCarousel .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 15%;
+}
+
+#myCarousel .carousel-indicators img {
+    border: 2px solid #ddd;
+    float: left;
+    left: 0;
+    width: 100%;
+}
+
+#myCarousel .carousel-indicators .active img {
+    border: 2px solid #39b3d7;
+
+}
+*/
+
+
+/*  ----------------------about-------------------*/
+.about-page section {
+    border: none;
+
+}
+.about-page h4{
+    margin-top: 0;
+}
+#ed {
+    background: -webkit-linear-gradient(-70deg, rgba(93, 181, 164,1) 0%, rgba(93, 181, 164,1)  10%,rgba(243,243,242,1) 10%, rgba(243,243,242,1) 100% );
+    background: -o-linear-gradient(-70deg, rgba(93, 181, 164, 1) 0%, rgba(93, 181, 164,1)  10%,rgba(243,243,242,1) 10%, rgba(243,243,242,1) 100% ); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(-70deg, rgba(93, 181, 164,1) 0%, rgba(93, 181, 164,1)  10%,rgba(243,243,242,1) 10%, rgba(243,243,242,1) 100% ); /*Fx 3.6-15*/
+    background: linear-gradient(160deg, rgba(93, 181, 164,1) 0%, rgba(93, 181, 164,1)  10%,rgba(243,243,242,1) 10%, rgba(243,243,242,1) 100% );
+
+
+/*    border-top: 10px solid #5DB5A4;*/
+}
+#like {
+    border-top: 15px solid #F57A82;
+    background-color: #F4CDA5;
+}
+
+.logo {
+    padding: 0.5em;
+    max-width: 200px;
+}
+.profile {
+    border: 8px solid #F3F3F2;
+    max-width: 25%;
+    margin:0 auto;
+}
+
 /*----------------------------Media Queries*/
 
 @media screen and (min-width: 767px) {
@@ -408,7 +590,11 @@ blockquote::after {
     .navbar h2 {
         margin: 0;
         font-size: 14pt;
-
+    }
+    .profile {
+        max-width: 100%;
+        float: right;
+    }
 }
 @media screen and (max-width: 767px) {
         .proj:nth-child(odd){
@@ -421,32 +607,12 @@ blockquote::after {
     nav {
         margin: 0;
     }
+}
+
 
 /*    create drop down*/
 
 
 
-}
 
-/*blarb wed 9/13 */
-.project-header img {
-/*    width: 50%;*/
-    display: inline-block;
-}
 
-.carousel-control.left, carousel-control.right {
-    background-image:none;
-}
-
-.carousel-control {
-top: 50%;
-bottom: 50%;
-}
-
-.flyer {
-    margin-top: 100px;
-}
-
-@-ms-viewport{
-  width: device-width;
-}

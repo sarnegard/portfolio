@@ -27,31 +27,29 @@
                         <div class="main-logo">
                             <a  href="http://saraharnegard.com">
                                 <h1>Sarah Arnegard</h1>
-                                                            <img src="images/logo.svg" alt="Sarah Arnegard">
+
                             </a>
-<!--
-                            <a  href="index.html">
-                                <h1>Sarah Arnegard</h1>
--->
-                                <!--                            <img src="images/logo.svg" alt="Sarah Arnegard">-->
-                            </a>
+
+
                             <h2>UX / Interaction Designer</h2>
                         </div>
                         <ul>
-<!--                        <li> <a href="index.html">Portfolio</a></li>-->
-                            <li> <a href="http://saraharnegard.com">Portfolio</a></li>
-                            <li><a class="about" href="#">About</a></li>
+                        <li> <a href="index.html">Portfolio</a></li>
+<!--                            <li> <a href="http://saraharnegard.com">Portfolio</a></li>-->
+                            <li><a class="about" href="about.html">About</a></li>
                             <li><a class="contact" href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
             <!-- ////////////////////// about & contact /////////////////////// -->
+<!--
             <div class="about">
                 <h1 class="about-copy">Hello, I'm Sarah!</h1>
-                <p>I'm a User Experience Designer based in the San Francisco Bay Area. I think a designer&#39;s most valuable skills are listening and asking questions. View my <a href="Resume.pdf">resume &#40;pdf&#41;</a></p>
+                <p>I'm a User Experience Designer based in the San Francisco Bay Area. I think a designer&#39;s most valuable skills are listening and asking questions.</p><p>I <span class="glyphicon glyphicon-heart"></span> Pair Design, Interactive Prototypes, Git, and my dog, Mocha. View my <a href="Resume.pdf">resume &#40;pdf&#41;</a>.</p>
                 <a class="close" href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
             </div>
+-->
             <div class="contact">
                 <h1>Let's talk!</h1>
                 <p>Feel free to reach out to me via <a href="mailto:&#115;&#097;&#114;&#097;&#104;&#097;&#114;&#110;&#101;&#103;&#097;&#114;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a>, <a href="https://www.linkedin.com/in/saraharnegard/">LinkedIn</a> or <a href="https://twitter.com/hey_arne">Twitter</a>.</p>
@@ -62,7 +60,7 @@
             <div class="container">
                 <section class="overview project-header">
                     <div class="row">
-                        <div id="carousel-example-generic" class="col span6 carousel slide" data-ride="carousel">
+                        <div id="carousel-example-generic" class="col span6 carousel slide" data-ride="carousel" data-interval="false">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -73,18 +71,15 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <img src="images/schol/landing_page_mb.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
+
                                 </div>
                                 <div class="item">
                                     <img src="images/schol/reward_mb.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
+
                                 </div>
                                 <div class="item">
                                     <img src="images/schol/quiz_mb.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- Controls -->
@@ -113,7 +108,7 @@
                                 believe this would :
                             </p>
                             <ul>
-                                <li>Solve parents need to encourage children to read</li>
+                                <li>Solve parents&#39; need to encourage children to read</li>
                                 <li>Prove commitment to education</li>
                                 <li>Foster excitement for Scholastic titles</li>
                             </ul>
@@ -181,9 +176,10 @@
                 <!-- ............... Design Section ................................ -->
                 <section>
                     <h2>Persona Creation and Feature Development</h2>
-                    <div class="row">
-                        <p>Using our research, we created empathy maps for our parent user and child user. This helped us develop our personas.</p>
-                    </div>
+                    <h3>Personas</h3>
+
+                    <p>Using our research, we created empathy maps for our parent user and child user. This helped us develop our personas.</p>
+
                     <div class="row">
                         <!--
                             <div class="col span4">
@@ -194,7 +190,9 @@
                         <img src="images/schol/child_persona.png" alt="" class="col span6">
                         <img src="images/schol/persona_adult.png" alt="" class="col span6">
                     </div>
+                    <h3>SNiFs</h3>
                     <div class="row">
+
                         <div class="col span6">
                             <p>
                                 From here, we used the personas to create SSNiFs &#40;Stakeholder, Situation, Needs and Features charts &#41;. This allowed us to identify possible features that were directly tied to our users&#39; needs. Next, we prioritized the features and decided which ones we would design for our MVP.
@@ -203,6 +201,7 @@
                         </div>
                         <img class="col span6" src="images/schol/Jenny_SSNiF.png" alt="">
                     </div>
+                    <h3 class="clear">User Flows</h3>
                     <div class="row">
                         <img src="images/schol/Project%203%20Kid%20Userflow.png" alt="" class="col span6">
                         <img src="images/schol/Project%203%20Parent%20Userflow.png" alt="" class="col span6">
@@ -216,9 +215,9 @@
                         site map
                         user flows
                         -->
-                    <div class="col span6">
+                    <div class="col span10">
                         <h3>Site Map</h3>
-                        <img src="images/schol/sitemap.png" alt="Site map">
+                        <img class="constrain" src="images/schol/sitemap.png" alt="Site map">
                     </div>
                 </section>
                 <!--        Wire frames-->
@@ -241,20 +240,74 @@
                         <img class="col span4" src="images/schol/k%20-%20sign%20up%201.png" alt="">
                     </div>
                 </section>
+                <section>
+                   <h3>Challenge (Quiz) Flow</h3>
+                   <div class="row">
+                    <div id="carousel-quiz" class="col span8 carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-quiz" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-quiz" data-slide-to="1"></li>
+                                <li data-target="#carousel-quiz" data-slide-to="2"></li>
+                                <li data-target="#carousel-quiz" data-slide-to="3"></li>
+                                <li data-target="#carousel-quiz" data-slide-to="4"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/schol/k%20-%20quiz%201.png" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/schol/k%20-%20quiz%202.png" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/schol/k%20-%20quiz%203.png" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/schol/k%20-%20quiz%204.png" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/schol/k%20-%20quiz%205.png" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-quiz" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-quiz" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <div class="col span4">
+                            <p>There were several goals I wanted to address with the challenges:</p>
+                            <ul>
+                                <li><p><strong>Educational Value:</strong> other reading quizzes were based more on remembering facts. The questions should be about important information from the book rather than trivia</p></li>
+                                <li><p><strong>Fun &amp; Interactivity:</strong> create a more engaging experience by using images, videos and other media</p></li>
+                                <li><p><strong>Creative Confidence &amp; Engagement:</strong> open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
                 <!--        Prototype and next steps-->
                 <section>
                     <h3>Prototype and Next Steps</h3>
                     <div class="row">
-                        <a href="http://invis.io/KC10SCQ8Q" class="button-link">View Prototype</a>
-                        <!--            <img class="col span6" src="" alt="prototype vidya">-->
-                        <div class="col span6">
-                            <h4>Next Steps: </h4>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+<div class="button-container">
+                            <a class="button-link" target="_blank" href="http://invis.io/KC10SCQ8Q">View Prototype</a>
+                            <small>This will open Invision in a new tab</small>
                         </div>
+                        <!--            <img class="col span6" src="" alt="prototype vidya">-->
+
                     </div>
                 </section>
             </div>
@@ -269,10 +322,19 @@
                     <li><a class="icon-mail" href="mailto:&#115;&#097;&#114;&#097;&#104;&#097;&#114;&#110;&#101;&#103;&#097;&#114;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"></a></li>
                     <li><a class="icon-twitter" href="https://twitter.com/hey_arne"></a></li>
                 </ul>
-                this site was designed and coded by me
+                <div class="col span4">  <p>This site was designed and coded by me.</p>
+
+                    <p>
+                        Grid system was generated with <a href="http://gridpak.com/">Gridpak.</a> Icons from <a href="http://getbootstrap.com/components/">Bootstrap Glypicons</a> and <a href="https://icomoon.io/">Icomoon</a>. I'm also using the <a href="http://getbootstrap.com/javascript/#carousel">Bootstrap Carousel Plugin</a> and typefaces served by <a href="https://www.google.com/fonts">Google Fonts</a>.
+                    </p>
+                    <!--</div>
+                <p>this site was designed and coded by me</p>
+                <small>&copy; Sarah Arnegard 2014</small>
+-->
+            </div>
             </div>
         </footer>
-        <script src="js/jquery-1.3.2.min.js"></script>
+<!--        <script src="js/jquery-1.3.2.min.js"></script>-->
         <script src="js/experiment.js"></script>
     </body>
 </html>

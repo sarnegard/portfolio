@@ -39,7 +39,7 @@
                     </div>
                             <ul>
                                 <li> <a href="index.html">Work</a></li>
-                                <li><a class="about" href="#">About</a></li>
+                                <li><a class="about" href="about.html">About</a></li>
                                 <li><a class="contact" href="#">Contact</a></li>
                             </ul>
                     </nav>
@@ -47,6 +47,7 @@
             </header>
 
 <!-- ////////////////////// about & contact /////////////////////// -->
+<!--
             <div class="about">
 
                 <h1 class="about-copy">Hello, I'm Sarah!</h1>
@@ -54,6 +55,7 @@
                  <a class="close" href="#"><span class="glyphicon glyphicon-chevron-up"></a>
 
             </div>
+-->
             <div class="contact">
                 <h1>Let's talk!</h1>
                 <p>Feel free to reach out to me via <a href="mailto:&#115;&#097;&#114;&#097;&#104;&#097;&#114;&#110;&#101;&#103;&#097;&#114;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a>, <a href="https://www.linkedin.com/in/saraharnegard/">LinkedIn</a> or <a href="https://twitter.com/hey_arne">Twitter</a>.</p>
@@ -66,12 +68,14 @@
            <section class="project-header">
 
           <div class="row">
-                <div id="carousel-beta-generic" class="col span6 carousel slide" data-ride="carousel">
+                <div id="carousel-beta-generic" class="col span6 carousel slide" data-ride="carousel" data-interval="false">
                  <!-- Indicators -->
                  <ol class="carousel-indicators">
                    <li data-target="#carousel-beta-generic" data-slide-to="0" class="active"></li>
                    <li data-target="#carousel-beta-generic" data-slide-to="1"></li>
                    <li data-target="#carousel-beta-generic" data-slide-to="2"></li>
+                   <li data-target="#carousel-beta-generic" data-slide-to="3"></li>
+                   <li data-target="#carousel-beta-generic" data-slide-to="4"></li>
                  </ol>
 
                  <!-- Wrapper for slides -->
@@ -79,26 +83,31 @@
                    <div class="item active">
                      <img src="images/beta/Home.png" alt="...">
                      <div class="carousel-caption">
+                     Home Page - home page is decluttered, featuring only a few unique products rather than overwhelming the user
                      </div>
                    </div>
                    <div class="item">
                      <img src="images/beta/Category_page.png" alt="...">
                      <div class="carousel-caption">
+                     Product Category Page - added faceted navigation.
                      </div>
                    </div>
                    <div class="item">
                      <img src="images/beta/Product_page.png" alt="...">
                      <div class="carousel-caption">
+                     Product Page- created tabs to hold additional information to decrease info hidden below the fold
                      </div>
                    </div>
                     <div class="item">
                      <img src="images/beta/Checkout.png" alt="...">
                      <div class="carousel-caption">
+                        One Page Checkout- this would provide better visibility to the user to reduce errors
                      </div>
                    </div>
                    <div class="item">
                      <img src="images/beta/Order_review.png" alt="...">
                      <div class="carousel-caption">
+                     Order Review- allows user to double check all information before placing order
                      </div>
                    </div>
                  </div>
@@ -124,29 +133,34 @@
        <section>
           <h2>Process</h2>
           <p>I began by assesing the usability of the site, and conducting card sorting of product categories. I also did a lot of competitive analysis of ecommerce sites.</p>
-           <div class="row">
 
-               <img class="col span6" src="images/beta/deck/sarah_arnegard_project2.001.jpg" alt="">
-               <img class="col span6" src="images/beta/deck/sarah_arnegard_project2.002.jpg" alt="">
-            </div>
-            <div class="row">
-                   <div class="col span6">
+
+               <img class="span9 constrain deck" src="images/beta/deck/sarah_arnegard_project2.001.jpg" alt="">
+               <img class="span9 constrain deck" src="images/beta/deck/sarah_arnegard_project2.002.jpg" alt="">
+
+
+                <div class="span9 constrain">
                        <h3>Sketches</h3>
-                        <img src="images/beta/deck/project2/project2.008.jpg" alt="">
-                   </div>
-                   <img class="col span6" src="images/beta/deck/project2/project2.009.jpg" alt="">
-            </div>
+                        <img class="deck" src="images/beta/deck/project2/project2.008.jpg" alt="">
+                </div>
 
-            <div class="row">
-               <img class="col span6" src="images/beta/deck/project2/project2.010.jpg" alt="">
-               <img class="col span6" src="images/beta/deck/project2/project2.011.jpg" alt="">
 
-           </div>
+
+                   <img class="span9 constrain deck" src="images/beta/deck/project2/project2.009.jpg" alt="">
+
+
+
+               <img class="span9 constrain deck" src="images/beta/deck/project2/project2.010.jpg" alt="">
+               <img class="span9 constrain deck" src="images/beta/deck/project2/project2.011.jpg" alt="">
+
        </section>
 
         <section>
             <h2>Prototype</h2>
-            <a class="button-link" href="http://invis.io/7R18S468P">View Prototype</a>
+            <div class="button-container">
+                <a class="button-link" target="_blank" href="http://invis.io/7R18S468P">View Prototype</a>
+                <small>This will open Invision in a new tab</small>
+            </div>
         </section>
 
     </div>
@@ -164,7 +178,16 @@
                     <li><a class="icon-twitter"href="https://twitter.com/hey_arne"></a></li>
 
                 </ul>
-                this site was designed and coded by me
+                <div class="col span4">  <p>This site was designed and coded by me.</p>
+
+                    <p>
+                        Grid system was generated with <a href="http://gridpak.com/">Gridpak.</a> Icons from <a href="http://getbootstrap.com/components/">Bootstrap Glypicons</a> and <a href="https://icomoon.io/">Icomoon</a>. I'm also using the <a href="http://getbootstrap.com/javascript/#carousel">Bootstrap Carousel Plugin</a> and typefaces served by <a href="https://www.google.com/fonts">Google Fonts</a>.
+                    </p>
+                    <!--</div>
+                <p>this site was designed and coded by me</p>
+                <small>&copy; Sarah Arnegard 2014</small>
+-->
+            </div>
             </div>
         </footer>
 <script src="js/jquery-1.3.2.min.js"></script>

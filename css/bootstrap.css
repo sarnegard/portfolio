@@ -9,7 +9,7 @@
  * Config saved to config.json and https://gist.github.com/bdb8d7461d7e30578b70
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-/*
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -64,7 +64,7 @@ strong {
 dfn {
   font-style: italic;
 }
-/*
+
 mark {
   background: #ff0;
   color: #000;
@@ -149,8 +149,7 @@ input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
-*/
-/*
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -188,7 +187,7 @@ td,
 th {
   padding: 0;
 }
-*/
+
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');

@@ -4,7 +4,7 @@
  * Generator - http://gridpak.com/
  * Created by @erskinedesign
  */
-div {
+/*div {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
@@ -15,7 +15,7 @@ div {
     margin: auto;
     overflow: hidden;
 
-}
+}*/
 
 
 /* Reusable column setup */
@@ -60,13 +60,7 @@ div {
         float:left;
     }
 
-    .col{
-      margin-left: 1.5%;
-    }
 
-    .col:first-child {
-      margin-left:0;
-    }
 
 }
 
@@ -123,7 +117,7 @@ div {
 
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 500px) and (max-width: 767px) {
     .sm-span6 {
       width: 49.25%;
 
@@ -141,6 +135,15 @@ div {
     }
 }
 
+@media screen and (min-width: 500px){
+    .col{
+      margin-left: 1.5%;
+    }
+
+    .col:first-child {
+      margin-left:0;
+    }
+}
 
 
 
