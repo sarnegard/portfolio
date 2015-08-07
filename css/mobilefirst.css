@@ -69,12 +69,17 @@ nav ul {
     padding: 0;
 }
 a {
-    color: #ff5566;
+    color: #2B2A2A;
     text-decoration: none;
 }
 a:hover {
     text-decoration: none;
     color: #5DB5A4;
+}
+
+a.active {
+    
+    color: #808080;
 }
 
 .right {
@@ -85,65 +90,89 @@ a:hover {
     text-align: right;
 }
 
-.left-align, p, .col h3, li {
+.left-align,
+ .col h3 {
     text-align: left;
 }
 img {
     max-width: 100%;
 
 }
-
-
-/*-----------Header-----------------------------------*/
-
 footer {
     text-align: center;
 }
 
-nav ul {
+/*-----------sidebar-----------------------------------*/
+
+.sidebar {
+    width: 225px;
+    text-align: center;
+    position: fixed;
+    min-height: 100%;
+    background-color: #fff;
+    padding: 40px 30px;
+}
+
+.portrait-container {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #808080;
     margin: 0 auto;
 }
-nav li:nth-child(1){
-    margin-left:0;
-}
-nav li {
-    display: inline-block;
-    margin-left: 10%;
-}
 
-
-.main-logo {
-    margin: 0 auto;
-    position: relative;
-
-}
-
-.main-logo a {
-    color:black;
-    display: block;
+.name {
+    font-size: 24px;
+    line-height: 28px;
     margin-bottom: 0;
 }
 
-.main-logo a img {
-    width: 100%;
-    max-width: 250px;
+.job-title {
+    margin-top: 0;
+    font-size: 11px;
+    font-weight: normal;
+    color: #2B2A2A;
 }
 
-.main-logo h1 {
-    margin-bottom: 0px;
-    font-size: 2.2em;
+.nav-links {
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.navbar h2 {
-    margin: 0;
-    margin-bottom: 1em;
-    display: block;
-    font-size: 1em;
-    font-weight:400;
-
+.nav-links li {
+    margin-left: 0;
+    margin-bottom: 20px;
 }
 
+.social-links {
+    padding: 0;
+    margin-bottom: 50px;
+}
 
+.social-links li {
+    display: inline;
+}
+
+.sidebar-footer {
+    height: 30%;
+    margin-top: 100px;
+    position: relative;
+    bottom: 0;
+}
+
+.credits {
+    font-size: 10px;
+    bottom: 0;
+    position: absolute;
+}
+
+.page-content {
+    margin-left: 225px;
+    background-color: grey;
+    min-height: 100%;
+    padding: 50px 0;
+}
 
 /* ------------------Footer--------------------*/
 .page-wrap {
@@ -219,14 +248,6 @@ footer .span4 {
 
 /*-------------Portfolio-----------------------------*/
 
-.work {
-    margin-top: 20px;
-    overflow: hidden;
-    background: #F3F3F2;
-    padding: 3em 0;
-
-
-}
 .work a {
     color:black;
 /*    margin-top: 3%;*/
@@ -571,21 +592,8 @@ bottom: 50%;
 /*----------------------------Media Queries*/
 
 @media screen and (min-width: 767px) {
-    nav ul {
-        clear:both;
-        text-align: right;
-    }
 
 
-    .main-logo {
-        margin-left: 2.5%;
-        float:left;
-        margin-bottom: -25px;
-        max-width: 50%;
-    }
-    .main-logo h1 {
-        margin-bottom: 10px;
-    }
     .project {
         padding-top: 25px;
         padding-bottom: 50px;
