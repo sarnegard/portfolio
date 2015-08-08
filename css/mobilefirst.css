@@ -26,7 +26,7 @@ h2 {
     color: #808080;
 }
 
-h1, .project {
+h1 {
     font-family: Georgia, serif;
     font-size: 24px;
     /*text-align: center;*/
@@ -122,14 +122,14 @@ footer {
 }
 
 .name {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 28px;
     margin-bottom: 0;
 }
 
 .job-title {
-    margin-top: 0;
-    font-size: 11px;
+    margin-top: 5px;
+    font-size: 12px;
     font-weight: normal;
     color: #2B2A2A;
 }
@@ -265,64 +265,23 @@ footer .span4 {
 
 
 
-.proj {
-/*     background-image: url("../images/schol-1.png");*/
-/*
-    background-size: cover;
-    border: px solid lightgrey;
-*/
-
-/*    padding: 0;*/
+.project {
+    border: 10px solid lightgrey;
     background: white;
-    padding: 0.5em;
-
+    padding: 50px;
+    margin-bottom: 30px;
 }
 
 
-.proj img {
-   width: 100%;
+.project img {
+   max-width: 100%;
 }
 .proj h3, .proj p {
     text-align: center;
     margin-bottom: 0;
 
 }
-/*
-#centro div:hover {
-    background-color:red;
-}
-*/
-#centro >div {
-/*
-    background-image:
-        url("../images/centro/centro_iphone_mock.png");
-    background-size: 120%;
-*/
-    background-repeat:no-repeat;
-/*    background-color: lightblue;*/
-}
-#centro > div {
-    background-color: #5DB5A4;
-}
-#book > div {
-    background-color: #F4CDA5;
-}
-#beta > div {
-    background-color: #F57A82;
-}
-#centro > div:hover{
-    background-color: RGBA(93, 181, 164, 0.5);
-}
 
-#book > div:hover {
-    background-color: RGBA(244, 205, 165, 0.5);
-}
-
-#beta > div:hover {
-/*    background-color: white;*/
-    background-color: RGBA(245, 122, 130, 0.5);
-
-}
 
 
 /*--------------Project Page--------------*/
@@ -593,12 +552,6 @@ bottom: 50%;
 
 @media screen and (min-width: 767px) {
 
-
-    .project {
-        padding-top: 25px;
-        padding-bottom: 50px;
-        background-color: #F3F3F2;
-    }
 
     nav ul li {
         margin-left: 5%;
