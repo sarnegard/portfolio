@@ -245,7 +245,7 @@ footer .span4 {
     left: 0;
     position: absolute;
     z-index: 1000;
-    padding-top: 25%;
+    padding: 25% 30px;
     height: 100%;
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.76);
@@ -260,7 +260,7 @@ a:hover .proj {
 
 .proj:hover {
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .img-container {
@@ -301,7 +301,9 @@ a:hover .proj {
     background-color: #F57A82;
 }
 
-
+#book .img-container {
+    padding: 45px;
+}
 
 /*--------------Project Page--------------*/
 .overview {
