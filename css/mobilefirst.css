@@ -148,6 +148,7 @@ footer {
 .social-links {
     padding: 0;
     margin-bottom: 50px;
+    font-size: 24px;
 }
 
 .social-links li {
@@ -173,6 +174,8 @@ footer {
     min-height: 100%;
     padding: 50px 0;
 }
+
+
 
 /* ------------------Footer--------------------*/
 .page-wrap {
@@ -248,18 +251,13 @@ footer .span4 {
 
 /*-------------Portfolio-----------------------------*/
 
-.work a {
-    color:black;
-/*    margin-top: 3%;*/
+.project-rows {
+    display: flex;
 }
 
-
-.work li {
-    margin: 40px;
-    font-size: 72px;
-    height: 15%;
+.project-link {
+    display: flex;
 }
-
 
 /*--------------home--------------*/
 

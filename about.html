@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/gridpak.css">
         <link href='http://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700' rel='stylesheet'>
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/icomoon.css">
         <link rel="stylesheet" href="css/mobilefirst.css">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -17,14 +17,47 @@
 </head>
 </head>
 <body>
-<div class="page-wrap about-page">
-            <header>
+    <div class="sidebar">
+                    <nav >  
+                            <div class="portrait-container"></div>    
+                            <a  href="index.html">
+                                <h1 class="name">Sarah <br> Arnegard</h1>
+                                <!--                            <img src="images/logo.svg" alt="Sarah Arnegard">-->
+                            </a>
+                            <h2 class="job-title">User Experience Designer</h2>
+                        <ul class="nav-links">
+                            <li> <a class= "work-link" href="#">Portfolio</a></li>
+                            <li><a class="contact" href="resume.html">Resume</a></li>
+                            <li><a class="about active" href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-footer">
+                        <ul class="social-links">
+                            <li>
+                                <a class="icon-linkedin" href="https://www.linkedin.com/in/saraharnegard/"></a>
+                            </li>
+                            <li>
+                                <a class="icon-mail" href="mailto:&#115;&#097;&#114;&#097;&#104;&#097;&#114;&#110;&#101;&#103;&#097;&#114;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"></a>
+                            </li>
+                            <li>
+                                <a class="icon-twitter" href="https://twitter.com/hey_arne"></a>
+                            </li>
+                        </ul>
+
+                    <div class="credits">
+                        <p>This site was designed and coded by me</p>
+                        <small>&copy; Sarah Arnegard 2014 &amp; 2015</small>
+                    </div>
+                </div>
+            </div>
+        
+<!--             <header class="">
                 <div class="navbar container">
                     <nav class="row">
                         <div class="main-logo">
                             <a  href="http://saraharnegard.com">
                                 <h1>Sarah Arnegard</h1>
-                                <!--                            <img src="images/logo.svg" alt="Sarah Arnegard">-->
+                                                       <img src="images/logo.svg" alt="Sarah Arnegard">
                             </a>
                             <h2>UX / Interaction Designer</h2>
                         </div>
@@ -35,27 +68,24 @@
                         </ul>
                     </nav>
                 </div>
-            </header>
-        <div class="contact">
-                <h1>Let's talk!</h1>
-                <p>Feel free to reach out to me via <a href="mailto:&#115;&#097;&#114;&#097;&#104;&#097;&#114;&#110;&#101;&#103;&#097;&#114;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a>, <a href="https://www.linkedin.com/in/saraharnegard/">LinkedIn</a> or <a href="https://twitter.com/hey_arne">Twitter</a>.</p>
-                <a class="close" href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
-            </div>
-    <h2 class="project">About</h2>
-
-        <section>
+            </header> -->
+ 
+        <div class="page-content">
             <div class="container">
                 <div class="cf row">
-                    <div class="col span6 ">
-                        <img class="col span6  profile" src="images/profilepic.JPG" alt="my picture">
-                    </div>
-                    <div class="col span4">
-                       <h3>Hi, I'm Sarah</h3>
-                        <p>I'm all about exercising my empathy muscle. I've always been insatiably curious about the world around me, learning as much as I can from every experience. My goal is to contribute to products and ideas that truly enrich the lives of fellow humans. Have a challenge I might be interested in? Reach out to me via <a href="https://twitter.com/hey_arne">Twitter</a>, <a href="mailto:&#115;&#097;&#114;&#097;&#104;&#097;&#114;&#110;&#101;&#103;&#097;&#114;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a>, and <a href="https://www.linkedin.com/in/saraharnegard/">LinkedIn</a>, or view my <a href="resume.html">resume</a></p>
+                    <div class="project col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="col span6  profile" src="images/profilepic.JPG" alt="my picture">
+                            </div>
+                            <div class="col-md-6">
+                               <h3>Hi, I'm Sarah</h3>
+                                <p>I'm all about exercising my empathy muscle. I've always been insatiably curious about the world around me, learning as much as I can from every experience. My goal is to contribute to products and ideas that truly enrich the lives of fellow humans. Have a challenge I might be interested in? Reach out to me via <a href="https://twitter.com/hey_arne">Twitter</a>, <a href="mailto:&#115;&#097;&#114;&#097;&#104;&#097;&#114;&#110;&#101;&#103;&#097;&#114;&#100;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a>, and <a href="https://www.linkedin.com/in/saraharnegard/">LinkedIn</a>, or view my <a href="resume.html">resume</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 <!--         <section id="ed">
            <div class="container">
                 <div>
@@ -130,7 +160,7 @@
         </section>
 -->
     </div>
-        <footer>
+<!--         <footer>
             <div class="container">
                 <ul>
                     <li>
@@ -144,13 +174,11 @@
                     <p>
                         Grid system was generated with <a href="http://gridpak.com/">Gridpak.</a> Icons from <a href="http://getbootstrap.com/components/">Bootstrap Glypicons</a> and <a href="https://icomoon.io/">Icomoon</a>. I'm also using the <a href="http://getbootstrap.com/javascript/#carousel">Bootstrap Carousel Plugin</a> and typefaces served by <a href="https://www.google.com/fonts">Google Fonts</a>.
                     </p>
-                    <!--</div>
-                <p>this site was designed and coded by me</p>
-                <small>&copy; Sarah Arnegard 2014</small>
--->
+
             </div>
             </div>
-        </footer>
+        </footer> -->
+
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/experiment.js"></script>
 </body>
