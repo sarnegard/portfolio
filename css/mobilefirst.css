@@ -85,6 +85,7 @@ img {
 }
 
 
+
 /*-----------Header-----------------------------------*/
 
 header,
@@ -207,7 +208,9 @@ footer .span4 {
     bottom: 0px;
 }
 
-
+.work-row {
+    display: flex;
+}
 
 /*-------------Portfolio-----------------------------*/
 
@@ -221,7 +224,7 @@ footer .span4 {
 }
 .work a {
     color:black;
-/*    margin-top: 3%;*/
+    display: flex;
 }
 
 
@@ -237,22 +240,38 @@ footer .span4 {
 
 
 .proj {
-/*     background-image: url("../images/schol-1.png");*/
-/*
-    background-size: cover;
-    border: px solid lightgrey;
-*/
+    display: none;
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+    padding-top: 25%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 100%;
+    
+}
 
-/*    padding: 0;*/
-    background: white;
-    padding: 0.5em;
+a:hover .proj {
+    display: block;   
 
 }
 
-
-.proj img {
-   width: 100%;
+.proj:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
+
+.img-container {
+    padding:25px;
+    position: relative;
+}
+
+.img-container img {
+   max-width: 100%;
+}
+
 .proj h3, .proj p {
     text-align: center;
     margin-bottom: 0;
@@ -281,19 +300,7 @@ footer .span4 {
 #beta > div {
     background-color: #F57A82;
 }
-#centro > div:hover{
-    background-color: RGBA(93, 181, 164, 0.5);
-}
 
-#book > div:hover {
-    background-color: RGBA(244, 205, 165, 0.5);
-}
-
-#beta > div:hover {
-/*    background-color: white;*/
-    background-color: RGBA(245, 122, 130, 0.5);
-
-}
 
 
 /*--------------Project Page--------------*/
