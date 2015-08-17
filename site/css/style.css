@@ -1,185 +1,185 @@
 /*style.css*/
 
 html {
-    height: 100%;
+  height: 100%;
 }
 body{
-    font-family: "Raleway";
-    box-sizing: border-box;
-    height: 100%;
-    line-height: 1.5;
+  font-family: "Raleway";
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 1.5;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 section {
-    margin-top: 2.5%;
-    overflow:hidden;
+  margin-top: 2.5%;
+  overflow:hidden;
 }
 .clear {
-    clear: both;
+  clear: both;
 }
 
 nav ul {
-    list-style: none;
-/*    text-align: left;*/
-    padding:0;
+  list-style: none;
+  /*    text-align: left;*/
+  padding:0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .right-align {
-    text-align: right;
+  text-align: right;
 }
 p {
-    padding: 10px;
+  padding: 10px;
 }
 
 .left-align, p, .col h3, li {
-    text-align: left;
+  text-align: left;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 
 }
 /*-----------Header-----------------------------------*/
 
 header {
-/*    background: lightgrey;*/
+  /*    background: lightgrey;*/
 }
 .navbar {
-/*
+  /*
     vertical-align: middle;
     position: relative;
-*/
+ */
 }
 nav {
 
 }
 nav ul {
-/*    text-align: right;*/
-    margin: 0 auto;
+  /*    text-align: right;*/
+  margin: 0 auto;
 }
 nav li:nth-child(1){
-    margin-left:0;
+  margin-left:0;
 }
 nav ul li {
-    display: inline-block;
-    margin-left: 10%;
+  display: inline-block;
+  margin-left: 10%;
 }
 
 nav a {
-    color:#ff5566;
+  color:#ff5566;
 }
 
 nav a:hover {
-    color:#000;
+  color:#000;
 }
 
 .main-logo {
-    margin: 0 auto;
-    position: relative;
-    width: 50%;
+  margin: 0 auto;
+  position: relative;
+  width: 50%;
 }
 
 .main-logo a {
-    color: transparent;
-    display: block;
+  color: transparent;
+  display: block;
 }
 
 .main-logo a img {
-    width: 100%;
-    max-width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 .main-logo a:hover {
-/*    border: 1px solid black;*/
+  /*    border: 1px solid black;*/
 }
 
 .navbar h2 {
-    margin-top: 0;
-    margin-bottom: 50px;
-    display: block;
-    font-size: 14pt;
-    font-weight:400;
+  margin-top: 0;
+  margin-bottom: 50px;
+  display: block;
+  font-size: 14pt;
+  font-weight:400;
 
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 /* ------------------Footer--------------------*/
 .page-wrap {
-    min-height: 100%;
-    margin-bottom: -150px;
+  min-height: 100%;
+  margin-bottom: -150px;
 }
 
 .page-wrap:after {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 }
 
 footer, .page-wrap:after {
-    height: 150px;
-}
+          height: 150px;
+        }
 
 footer {
-/*    background: #ff5566;*/
-   border-bottom: 10px solid #ff5566;
-/*   position:relative;*/
-/*    height: %;*/
-/*   bottom: -100px;*/
+  /*    background: #ff5566;*/
+  border-bottom: 10px solid #ff5566;
+  /*   position:relative;*/
+  /*    height: %;*/
+  /*   bottom: -100px;*/
 
 }
 
 footer li {
-    display: inline-block;
+  display: inline-block;
 }
 
 
 /*-------------------About---------------------------*/
 
 .about, .contact {
-    text-align: center;
-    overflow: hidden;
-    height: 0;
-    transition: height .5s;
-    -webkit-transition: height .5s;
-    -moz-transition: height .5s;
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
 }
 
 .show-section {
-    height: 200px;
+  height: 200px;
 }
 
 
 /*-------------Portolio-----------------------------*/
 
 .work {
-    margin-top: 20px;
-    padding-top: 3%;
+  margin-top: 20px;
+  padding-top: 3%;
 
-    background: #F3F3F2;
+  background: #F3F3F2;
 
 
 }
 
 .work .container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 
 .work li {
-    margin: 40px;
-    font-size: 72px;
-    height: 15%;
+  margin: 40px;
+  font-size: 72px;
+  height: 15%;
 }
 
 
@@ -188,52 +188,52 @@ footer li {
 
 
 .proj {
-/*     background-image: url("../images/schol-1.png");*/
-    background-size: cover;
-    border: px solid lightgrey;
-     margin-bottom: 20px;
-    padding: 0;
-    background: white;
+  /*     background-image: url("../images/schol-1.png");*/
+  background-size: cover;
+  border: px solid lightgrey;
+  margin-bottom: 20px;
+  padding: 0;
+  background: white;
 }
 .proj img {
-   width: 100%;
+  width: 100%;
 }
 .proj h3 {
-    text-align:center;
+  text-align:center;
 }
 
 /*--------------Project Page--------------*/
 .overview .col {
-    text-align: left;
-    border: 1px solid grey;
+  text-align: left;
+  border: 1px solid grey;
 }
 
 .circle-text {
-/*    width:15%;*/
-    display: inline-block;
-    vertical-align: middle;
-/*    margin: 1.5%;*/
-/*    float:left;*/
+  /*    width:15%;*/
+  display: inline-block;
+  vertical-align: middle;
+  /*    margin: 1.5%;*/
+  /*    float:left;*/
 }
 .circle-text:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height:0;
-    padding-bottom: 100%;
-    background: #4679BD;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+  content: "";
+  display: block;
+  width: 100%;
+  height:0;
+  padding-bottom: 100%;
+  background: #4679BD;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 .circle-text div {
-    float:left;
-    width:100%;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    color:white;
+  float:left;
+  width:100%;
+  padding-top:50%;
+  line-height:1em;
+  margin-top:-0.5em;
+  text-align:center;
+  color:white;
 }
 /*
 .project_nav li{
@@ -258,7 +258,7 @@ footer li {
 
 .project_nav li::before{
   content: '';
-/*  position: absolute;*/
+  /*  position: absolute;*/
   top: 5em;
   left: -4em;
   width: 10em;
@@ -290,42 +290,40 @@ footer li {
 /* For modern browsers */
 .cf:before,
 .cf:after {
-    content:"";
-    display:table;
+  content:"";
+  display:table;
 }
 
 .cf:after {
-    clear:both;
+  clear:both;
 }
 
 /*----------------diagram-----------------*/
 .circle {
-    border-radius: 50%;
-    border: 2px dashed black;
-    height: 10em;
-    width:  10em;
-    float: right;
-    padding: 1em 1em;
+  border-radius: 50%;
+  border: 2px dashed black;
+  height: 10em;
+  width:  10em;
+  float: right;
+  padding: 1em 1em;
 }
 
 /*----------------------------Media Queries*/
 
 @media screen and (max-width: 767px) {
 
-    .proj:nth-child(odd){
-        margin-left: 0;
-    }
-    nav {
-        margin: 0;
-    }
+  .proj:nth-child(odd){
+    margin-left: 0;
+  }
+  nav {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .work {
-        display: block:
-    }
+  .work {
+    display: block:
+  }
 
-/*    create drop down*/
+  /*    create drop down*/
 }
-
-
