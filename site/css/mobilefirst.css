@@ -208,9 +208,6 @@ footer .span4 {
     bottom: 0px;
 }
 
-.work-row {
-    display: flex;
-}
 
 /*-------------Portfolio-----------------------------*/
 
@@ -224,7 +221,6 @@ footer .span4 {
 }
 .work a {
     color:black;
-    display: flex;
 }
 
 
@@ -576,6 +572,14 @@ bottom: 50%;
 /*----------------------------Media Queries*/
 
 @media screen and (min-width: 767px) {
+
+    .work-row {
+        display: flex;
+    }
+    .work a {
+        display: flex;
+
+    }
     nav ul {
         clear:both;
         text-align: right;
