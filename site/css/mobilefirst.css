@@ -32,7 +32,7 @@ body{
     font-family: "Raleway";
     box-sizing: border-box;
     line-height: 1.5;
-    font-size: 1em;
+   /* font-size: 1em;*/
 }
 h2, p {
 /*    margin: 0 auto;*/
@@ -84,11 +84,13 @@ img {
 
 }
 
-
+.work-row {
+    margin-bottom: 45px;
+}
 
 /*-----------Header-----------------------------------*/
 
-header,
+
 footer {
     text-align: center;
 }
@@ -289,6 +291,10 @@ a:hover .proj {
 */
     background-repeat:no-repeat;
 /*    background-color: lightblue;*/
+}
+
+#sookasa > div {
+    background-color: #5D9BB5;
 }
 #centro > div {
     background-color: #5DB5A4;
