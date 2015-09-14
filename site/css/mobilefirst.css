@@ -93,6 +93,7 @@ img {
 
 footer {
     text-align: center;
+    border-top: 2px solid #F3F3F2;
 }
 
 nav ul {
@@ -571,8 +572,10 @@ bottom: 50%;
 }
 .profile {
     border: 8px solid #F3F3F2;
-    max-width: 25%;
+    max-width: 100%;
+    float: right;
     margin:0 auto;
+    padding: 0;
 }
 
 /*----------------------------Media Queries*/
@@ -613,10 +616,6 @@ bottom: 50%;
     .navbar h2 {
         margin: 0;
         font-size: 14pt;
-    }
-    .profile {
-        max-width: 100%;
-        float: right;
     }
 }
 @media screen and (max-width: 767px) {
