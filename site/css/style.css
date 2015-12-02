@@ -284,7 +284,9 @@ footer li {
   background: lightblue;
 }
 
-
+.wireframe {
+  border: 1px solid lightgrey;
+}
 /*Clearfix*/
 
 /* For modern browsers */
@@ -327,5 +329,3 @@ footer li {
 
 /*    create drop down*/
 }
-
-

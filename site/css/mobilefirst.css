@@ -16,6 +16,10 @@ div {
 
 }
 
+.wireframe {
+  border: 1px solid lightgrey;
+}
+
 
 h1, .project {
     font-family: Oswald, sans-serif;
@@ -249,11 +253,11 @@ footer .span4 {
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.76);
     width: 100%;
-    
+
 }
 
 a:hover .proj {
-    display: block;   
+    display: block;
 
 }
 
@@ -633,8 +637,3 @@ bottom: 50%;
 
 
 /*    create drop down*/
-
-
-
-
-
